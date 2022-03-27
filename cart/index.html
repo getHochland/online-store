@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Корзина</title>
+    <link href="libs/nouislider.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="header-logo">
+                    <a href="index.html">
+                        <img src="images/logo.png">
+                    </a>
+                </div>
+                <div class="header-links">
+                    <ul>
+                        <li><a href="company.html">Компания</a></li>
+                        <li><a href="#">Скидки</a></li>
+                        <li><a href="#">Ремни</a></li>
+                        <li><a href="#">Ремонт</a></li>
+                    </ul>
+                </div>
+                <div class="cart">
+                    <a>Корзина</a>
+                    <div class="cart-quantity">
+                        <span>0</span>
+                    </div>
+                    <div class="cart-block">
+                        <div class="cart-products">
+                        </div>
+                        <div class="cart-block__buy">
+                            <button>Купить</button>
+                            <span>0р</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <section class="banner">
+            <img src="images/banner.jpg">
+            <section class="filter">
+                <div class="container">
+                    <div class="gender">
+                        <div class="gender-button">
+                            <button class="all">Пол</button>
+                        </div>
+                        <div class="gender-sub-menu">
+                            <button class="gender-block" data-filter="man">
+                                <span>Мужские</span>
+                            </button>
+                            <button class="gender-block" data-filter="woman">
+                                <span>Женские</span>
+                            </button>
+                            <button class="gender-block" data-filter="all">
+                                <span>Все</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="price">
+                        <div class="price-input">
+                            <div class= "price-left">
+                                <span>от</span>
+                                <input class="min-price" type="number" value="0">
+                            </div>
+                            <div class= "price-right">
+                                <span>до</span>
+                                <input class="max-price" type="number" value="0">
+                            </div>
+                            <button>Принять</button>
+                        </div>
+                        <div class="price-range">
+                        </div>
+                    </div>
+                    <div class="reset">
+                        <button>Обновить</button>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section class="products">
+            <div class="container">
+                <div class="products-block">
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+<script src="libs/jQuery%20v3.6.0.js"></script>
+<script src="libs/nouislider.min.js"></script>
+<script src="main.js"></script>
+</html>

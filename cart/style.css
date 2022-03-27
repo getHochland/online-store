@@ -1,0 +1,360 @@
+*{
+    margin: 0;
+    font-family: "Malgun Gothic";
+    font-weight: bold;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+    height: 100%;
+}
+.header{
+    background-color: #222223;
+    height: 100px;
+}
+.header-content{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.header-logo{
+    width: 15%;
+}
+.header-logo img{
+    width: 100%;
+}
+.header-links {
+    width: 75%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.header-links ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.header-links ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+}
+.header-links ul li{
+    list-style-type: none;
+}
+.cart{
+    width: 10%;
+    height: 100%;
+    font-size: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+}
+.cart > a{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cart:hover{
+    background-color: rgba(255, 255, 255, 0.15);
+}
+.products-block{
+    display: flex;
+    flex-wrap: wrap;
+}
+.banner{
+    width: 100%;
+}
+.banner img{
+    width: 100%;
+}
+.product{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    border: black solid 2px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0 30px 30px 0;
+}
+.product:nth-child(3n){
+    margin-right: 0;
+}
+.product-image{
+    width: 100%;
+    height: 90%;
+}
+.product-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.product-buy{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0 0 0;
+    align-items: center;
+}
+.product-title{
+    padding: 10px 0 0 0;
+}
+.product-buy__btn{
+    width: 30%;
+    cursor: pointer;
+    color: #222223;
+    background-color: white;
+    border: #222223 solid 1px ;
+    border-radius: 0;
+    height: 40px;
+}
+.product-buy__btn:hover{
+    background-color: #222223;
+    color: white;
+}
+.cart-quantity{
+    position: absolute;
+    right: 5%;
+    top: 20%;
+    background-color: #eebd9c;
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cart-block{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 600px;
+    background-color: white;
+    color: black;
+    border: #222223 solid 1px ;
+}
+.cart-products{
+    display: flex;
+    flex-direction: column;
+}
+.cart-products-item{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+.cart-products-item__image{
+    width: 20%;
+}
+.cart-products-item__image img{
+    width: 100%;
+}
+.cart-products-item__text{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+.cart-products-item__text-quantity{
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+}
+.cart-products-item__delete{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cart-products-item__delete button{
+    width: 40%;
+}
+.cart-products-item__delete button img{
+    width: 100%;
+}
+.cart-block__buy{
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.cart-block__buy button{
+    width: 30%;
+}
+.cart-block{
+    display: none;
+}
+.cart-block.active{
+    display: block;
+}
+.hide{
+    display: none;
+}
+button{
+    position: relative;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.gender-block{
+    height: 30px;
+    width: 100px;
+}
+button:active{
+    bottom: -1px;
+}
+.cart-products-item__text-price{
+    width: 30%;
+}
+.cart-products-item__text-title{
+    width: 50%;
+}
+.cart-products-item__text > div{
+    padding-right: 10px;
+}
+.cart-products-item{
+    border-bottom: 1px solid black;
+    height: 150px;
+}
+button:hover{
+    background-color: #222223;
+    color: white;
+}
+.gender-sub-menu{
+    height: 10px;
+    bottom: 40px;
+    transition-duration: 0.3s;
+    position: absolute;
+    z-index: 2;
+}
+.gender-sub-menu.active{
+    width: 100%;
+    position: absolute;
+}
+.gender-button > button{
+    width: 100%;
+    font-weight: bold;
+    border-radius: 0;
+    border:1px solid black;
+    height: 40px;
+    z-index: 3;
+}
+.gender{
+    width: 10%;
+    position: relative;
+    margin: 40px 0;
+}
+.gender-sub-menu button{
+    border:solid black;
+    border-width: 0 1px 1px 1px;
+    border-radius: 0;
+    font-weight: normal;
+    width: 100%;
+    height: 33.33333%;
+    pointer-events: none;
+}
+.gender-sub-menu{
+    opacity: 0;
+}
+.gender-sub-menu.active{
+    opacity: 1;
+    height: 75px;
+    bottom: -75px;
+}
+.gender-sub-menu.active button{
+    pointer-events: auto;
+}
+.cart-block{
+    cursor: auto;
+}
+.filter > div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.reset{
+    width: 10%;
+    height: 40px;
+}
+.reset button{
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    border: 1px solid black;
+}
+.cart-products-item__text-quantity{
+    width: 30%;
+}
+.cart-products-item__text-quantity button{
+    width: 27px;
+    height: 27px;
+    border-radius: 0;
+    border: 1px solid black;
+
+}
+.cart-products-item__text-quantity button span{
+    display: block;
+    font-weight: bold;
+    font-size: 20px;
+}
+.price{
+    width: 600px;
+    height: 80px;
+}
+.noUi-target{
+    background: #8d8d91;
+    width: 70%;
+    height: 2px;
+    box-shadow: none;
+    border: none;
+}
+.noUi-connects{
+    height: 2px;
+}
+.noUi-connect{
+    width: 100%;
+    background-color: black;
+}
+.noUi-handle::before{
+    display: none;
+}
+.noUi-handle::after{
+    display: none;
+}
+.noUi-handle.noUi-handle{
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    box-shadow: none;
+    border: 2px solid black;
+}
+.noUi-horizontal .noUi-handle{
+    top: -11px;
+}
+.price-range{
+    margin-top: 20px;
+}
+input{
+    border: none;
+    font-size: 25px;
+    width: 100px;
+}
+input[type='number'] {
+    -moz-appearance: textfield;
+}
+.price-input{
+    display: flex;
+}
+.price-input > div{
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 0 10px;
+    padding: 5px;
+}
+.price-input > div >input{
+    padding: 5px;
+}
